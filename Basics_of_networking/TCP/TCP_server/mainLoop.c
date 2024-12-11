@@ -62,9 +62,15 @@ int mainLoop(SOCKET *sock)
 						CLOSESOCKET(iter);
 						continue;
 					}
-					for ( int j = 0; j < received; ++j)
-						read[j] = toupper(read[j]);
-					send(iter, read, received, 0);
+					SOCKET j;
+for (j = 1; j <= max; ++j) {
+if (FD_ISSET(j, &master)) {
+if (j == *sock || j == iter)
+continue;
+else
+send(j, read, received, 0);
+}
+}
 				}
 			}
 		}
