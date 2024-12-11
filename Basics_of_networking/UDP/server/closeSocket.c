@@ -1,9 +1,9 @@
 #include "networkV2.h"
 
 
-void closeSocket ( sock address ) {
+void closeSocket ( sock *address ) {
 
-	CLOSESOCKET( address._socket);
+	CLOSESOCKET( (*address)._socket);
 
 	#if defined (_WIN32)
 	WSACleanup();
