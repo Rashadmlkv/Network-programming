@@ -6,7 +6,14 @@ A and AAAA links name to IP. One for ip4 , another ip6.
 MX mail server information
 TXT information about domain.
 CNAME makes alias of domain like mm.com to www.mm.com
+DNS server port 53 packet UDP.
+TCP fallback or DNS transport over TCP is sending pack over tcp when answer size is big
 
 getaddrinfo() sends DNS query. returns linked list of addresses specified in hints into addrinfo struct. 
 AI_NUMERICHOST flag is use when you know ip and restrict dns lookup for name. same to numericserv.
 
+
+
+LOOKUP:
+https://stackoverflow.com/questions/13514614/why-is-network-byte-order-defined-to-be-big-endian
+https://www.rfc-editor.org/ien/ien137.txt
