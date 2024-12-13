@@ -17,3 +17,6 @@ AI_NUMERICHOST flag is use when you know ip and restrict dns lookup for name. sa
 LOOKUP:
 https://stackoverflow.com/questions/13514614/why-is-network-byte-order-defined-to-be-big-endian
 https://www.rfc-editor.org/ien/ien137.txt
+
+CHANGED:
+    nothing but copied createSocket and closeSocket functions from UDP file. First time applied reusabilty.
