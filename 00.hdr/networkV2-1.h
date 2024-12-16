@@ -8,6 +8,7 @@
 #include <string.h>
 #include <time.h>
 #include <ctype.h>
+//#include <clock.h>
 
 //WINDOWS
 #if defined (_WIN32) && !(UNIX)
