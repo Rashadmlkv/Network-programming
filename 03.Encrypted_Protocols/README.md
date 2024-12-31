@@ -14,3 +14,5 @@ before exchange data , client sends chipher suite which is a list of encryption 
 https://www.youtube.com/watch?v=hExRDVZHhig
 https://www.youtube.com/watch?v=0TLDTodL7Lc
 https://www.youtube.com/watch?v=86cQJ0MMses
+
+SSH use tcp port 22
